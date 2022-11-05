@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+spring:
+  jpa:
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+
+server:
+  port: 8081
+spring:
+  application:
+    name: user-service
+
+
+
+
+
+
