@@ -8,7 +8,7 @@
 		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>motorbike-service</groupId>
+	<groupId>com.motorbike.service</groupId>
 	<artifactId>motorbike-service</artifactId>
 	<version>1.0</version>
 	<name>motorbike-service</name>
