@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,7 @@ import com.user.service.model.Car;
 import com.user.service.model.Motorbike;
 import com.user.service.service.UserService;
 
+@RefreshScope
 @RestController
 @RequestMapping("/user")
 public class UserController {
