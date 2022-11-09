@@ -30,12 +30,12 @@ public class UserService {
 	private MotorbikeFeignClient motorbikeFeignClient;
 
 	public List<Car> getCar(int id) {
-		List<Car> listCar = restTemplate.getForObject("http://localhost:8082/car/user/" + id, List.class);
+		List<Car> listCar = restTemplate.getForObject("http://car-service/car/user/" + id, List.class);
 		return listCar;
 	}
 
 	public List<Motorbike> getMotorbike(int id) {
-		List<Motorbike> listMotorbike = restTemplate.getForObject("http://localhost:8083/motorbike/user/" + id,
+		List<Motorbike> listMotorbike = restTemplate.getForObject("http://motorbike-service/motorbike/user/" + id,
 				List.class);
 		return listMotorbike;
 	}
